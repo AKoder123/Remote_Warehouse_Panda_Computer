@@ -1,0 +1,1 @@
+/home/hrigroup2/mrtele_ws/devel/.private/custom_msg/lib/python2.7/dist-packages/custom_msg/msg/_FingerPosMsg.py

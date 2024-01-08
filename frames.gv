@@ -1,0 +1,28 @@
+digraph G {
+"panda_link8" -> "panda_hand"[label="Broadcaster: /robot_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1704674893.437 sec old)\nBuffer length: 0.000 sec\n"];
+"panda_link7" -> "panda_link8"[label="Broadcaster: /robot_state_publisher\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1704674893.437 sec old)\nBuffer length: 0.000 sec\n"];
+"panda_link6" -> "panda_link7"[label="Broadcaster: /robot_state_publisher\nAverage rate: 30.202 Hz\nMost recent transform: 1704674893.406 ( 0.031 sec old)\nBuffer length: 4.967 sec\n"];
+"panda_hand" -> "panda_leftfinger"[label="Broadcaster: /robot_state_publisher\nAverage rate: 30.202 Hz\nMost recent transform: 1704674893.406 ( 0.031 sec old)\nBuffer length: 4.967 sec\n"];
+"panda_hand" -> "panda_rightfinger"[label="Broadcaster: /robot_state_publisher\nAverage rate: 30.202 Hz\nMost recent transform: 1704674893.406 ( 0.031 sec old)\nBuffer length: 4.967 sec\n"];
+"panda_link0" -> "panda_link1"[label="Broadcaster: /robot_state_publisher\nAverage rate: 30.202 Hz\nMost recent transform: 1704674893.406 ( 0.031 sec old)\nBuffer length: 4.967 sec\n"];
+"panda_link1" -> "panda_link2"[label="Broadcaster: /robot_state_publisher\nAverage rate: 30.202 Hz\nMost recent transform: 1704674893.406 ( 0.031 sec old)\nBuffer length: 4.967 sec\n"];
+"panda_link2" -> "panda_link3"[label="Broadcaster: /robot_state_publisher\nAverage rate: 30.202 Hz\nMost recent transform: 1704674893.406 ( 0.031 sec old)\nBuffer length: 4.967 sec\n"];
+"panda_link3" -> "panda_link4"[label="Broadcaster: /robot_state_publisher\nAverage rate: 30.202 Hz\nMost recent transform: 1704674893.406 ( 0.031 sec old)\nBuffer length: 4.967 sec\n"];
+"panda_link4" -> "panda_link5"[label="Broadcaster: /robot_state_publisher\nAverage rate: 30.202 Hz\nMost recent transform: 1704674893.406 ( 0.031 sec old)\nBuffer length: 4.967 sec\n"];
+"panda_link5" -> "panda_link6"[label="Broadcaster: /robot_state_publisher\nAverage rate: 30.202 Hz\nMost recent transform: 1704674893.406 ( 0.031 sec old)\nBuffer length: 4.967 sec\n"];
+"panda_link8" -> "panda_EE"[label="Broadcaster: /franka_control\nAverage rate: 29.620 Hz\nMost recent transform: 1704674893.417 ( 0.020 sec old)\nBuffer length: 4.963 sec\n"];
+"panda_EE" -> "panda_K"[label="Broadcaster: /franka_control\nAverage rate: 29.620 Hz\nMost recent transform: 1704674893.417 ( 0.020 sec old)\nBuffer length: 4.963 sec\n"];
+"camera_link" -> "camera_depth_frame"[label="Broadcaster: /camera/realsense2_camera_manager\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1704674893.437 sec old)\nBuffer length: 0.000 sec\n"];
+"camera_depth_frame" -> "camera_depth_optical_frame"[label="Broadcaster: /camera/realsense2_camera_manager\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1704674893.437 sec old)\nBuffer length: 0.000 sec\n"];
+"camera_link" -> "camera_color_frame"[label="Broadcaster: /camera/realsense2_camera_manager\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1704674893.437 sec old)\nBuffer length: 0.000 sec\n"];
+"camera_aligned_depth_to_color_frame" -> "camera_color_optical_frame"[label="Broadcaster: /camera/realsense2_camera_manager\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1704674893.437 sec old)\nBuffer length: 0.000 sec\n"];
+"camera_link" -> "camera_aligned_depth_to_color_frame"[label="Broadcaster: /camera/realsense2_camera_manager\nAverage rate: 10000.000 Hz\nMost recent transform: 0.000 ( 1704674893.437 sec old)\nBuffer length: 0.000 sec\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1704674893.437"[ shape=plaintext ] ;
+ }->"panda_link0";
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1704674893.437"[ shape=plaintext ] ;
+ }->"camera_link";
+}

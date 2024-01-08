@@ -1,0 +1,5 @@
+[31m[1mCMake Error[0m at /home/hrigroup2/mrtele_ws/src/custom_msg/CMakeLists.txt:107:
+  Parse error.  Expected a command name, got unquoted argument with text
+  "catkin-package".
+
+

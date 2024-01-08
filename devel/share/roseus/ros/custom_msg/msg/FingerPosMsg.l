@@ -1,0 +1,1 @@
+/home/hrigroup2/mrtele_ws/devel/.private/custom_msg/share/roseus/ros/custom_msg/msg/FingerPosMsg.l

@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/hrigroup2/mrtele_ws/devel/.private/ros_tcp_endpoint/setup.sh

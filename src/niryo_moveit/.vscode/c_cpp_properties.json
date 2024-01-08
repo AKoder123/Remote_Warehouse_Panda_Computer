@@ -1,0 +1,48 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/hrigroup2/mrtele_ws/devel/include/**",
+        "/home/hrigroup2/caitlin_ws/devel/include/**",
+        "/opt/ros/melodic/include/**",
+        "/home/hrigroup2/caitlin_ws/src/moveit/moveit_planners/chomp/chomp_motion_planner/include/**",
+        "/home/hrigroup2/mrtele_ws/src/franka_ros/franka_control/include/**",
+        "/home/hrigroup2/mrtele_ws/src/franka_ros/franka_example_controllers/include/**",
+        "/home/hrigroup2/mrtele_ws/src/franka_ros/franka_gripper/include/**",
+        "/home/hrigroup2/mrtele_ws/src/franka_ros/franka_hw/include/**",
+        "/home/hrigroup2/caitlin_ws/src/panda_simulator/gazebo-pkgs/gazebo_grasp_plugin/include/**",
+        "/home/hrigroup2/caitlin_ws/src/panda_simulator/gazebo-pkgs/gazebo_state_plugins/include/**",
+        "/home/hrigroup2/caitlin_ws/src/panda_simulator/gazebo-pkgs/gazebo_test_tools/include/**",
+        "/home/hrigroup2/caitlin_ws/src/panda_simulator/gazebo-pkgs/gazebo_version_helpers/include/**",
+        "/home/hrigroup2/caitlin_ws/src/panda_simulator/gazebo-pkgs/gazebo_world_plugin_loader/include/**",
+        "/home/hrigroup2/caitlin_ws/src/geometric_shapes/include/**",
+        "/home/hrigroup2/caitlin_ws/src/moveit/moveit_planners/chomp/chomp_interface/include/**",
+        "/home/hrigroup2/caitlin_ws/src/moveit/moveit_ros/benchmarks/include/**",
+        "/home/hrigroup2/caitlin_ws/src/moveit/moveit_plugins/moveit_ros_control_interface/include/**",
+        "/home/hrigroup2/caitlin_ws/src/moveit/moveit_ros/move_group/include/**",
+        "/home/hrigroup2/caitlin_ws/src/moveit/moveit_ros/occupancy_map_monitor/include/**",
+        "/home/hrigroup2/caitlin_ws/src/moveit/moveit_ros/robot_interaction/include/**",
+        "/home/hrigroup2/caitlin_ws/src/moveit/moveit_ros/moveit_servo/include/**",
+        "/home/hrigroup2/caitlin_ws/src/moveit/moveit_setup_assistant/include/**",
+        "/home/hrigroup2/caitlin_ws/src/moveit/moveit_plugins/moveit_simple_controller_manager/include/**",
+        "/home/hrigroup2/caitlin_ws/src/moveit_visual_tools/include/**",
+        "/home/hrigroup2/caitlin_ws/src/panda_simulator/general-message-pkgs/object_msgs_tools/include/**",
+        "/home/hrigroup2/caitlin_ws/src/hri_framework/hrca_dependencies/jsk_common_msgs/posedetection_msgs/include/**",
+        "/home/hrigroup2/caitlin_ws/src/rviz_visual_tools/include/**",
+        "/home/hrigroup2/caitlin_ws/src/trac_ik/trac_ik_kinematics_plugin/include/**",
+        "/home/hrigroup2/caitlin_ws/src/trac_ik/trac_ik_lib/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

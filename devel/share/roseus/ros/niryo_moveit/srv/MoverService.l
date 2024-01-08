@@ -1,0 +1,1 @@
+/home/hrigroup2/mrtele_ws/devel/.private/niryo_moveit/share/roseus/ros/niryo_moveit/srv/MoverService.l

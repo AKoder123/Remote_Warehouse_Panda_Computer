@@ -1,0 +1,1 @@
+/home/hrigroup2/mrtele_ws/devel/.private/custom_msg/share/common-lisp/ros/custom_msg/msg/_package.lisp

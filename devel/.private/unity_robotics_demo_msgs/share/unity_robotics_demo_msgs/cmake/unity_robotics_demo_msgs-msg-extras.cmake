@@ -1,0 +1,2 @@
+set(unity_robotics_demo_msgs_MESSAGE_FILES "/home/hrigroup2/mrtele_ws/src/unity_robotics_demo_msgs/msg/PosRot.msg;/home/hrigroup2/mrtele_ws/src/unity_robotics_demo_msgs/msg/UnityColor.msg;/home/hrigroup2/mrtele_ws/src/unity_robotics_demo_msgs/msg/FingerPosMsg.msg")
+set(unity_robotics_demo_msgs_SERVICE_FILES "/home/hrigroup2/mrtele_ws/src/unity_robotics_demo_msgs/srv/ObjectPoseService.srv;/home/hrigroup2/mrtele_ws/src/unity_robotics_demo_msgs/srv/PositionService.srv")

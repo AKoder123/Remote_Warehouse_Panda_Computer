@@ -1,0 +1,8 @@
+prefix=/home/hrigroup2/mrtele_ws/devel/.private/franka_example_controllers
+
+Name: franka_example_controllers
+Description: Description of franka_example_controllers
+Version: 0.7.1
+Cflags: -I/home/hrigroup2/mrtele_ws/devel/.private/franka_example_controllers/include -I/home/hrigroup2/mrtele_ws/src/franka_ros/franka_example_controllers/include -I/usr/include
+Libs: -L${prefix}/lib -lfranka_example_controllers /usr/lib/libfranka.so.0.7.1
+Requires: controller_interface dynamic_reconfigure eigen_conversions franka_hw franka_gripper geometry_msgs hardware_interface tf tf_conversions message_runtime pluginlib realtime_tools roscpp

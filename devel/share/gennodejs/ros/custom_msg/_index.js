@@ -1,0 +1,1 @@
+/home/hrigroup2/mrtele_ws/devel/.private/custom_msg/share/gennodejs/ros/custom_msg/_index.js

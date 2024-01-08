@@ -1,0 +1,5 @@
+franka_ros/franka_description
+/home/hrigroup2/mrtele_ws/devel/.private/franka_description/cmake.lock /home/hrigroup2/mrtele_ws/devel/./cmake.lock
+/home/hrigroup2/mrtele_ws/devel/.private/franka_description/share/franka_description/cmake/franka_descriptionConfig-version.cmake /home/hrigroup2/mrtele_ws/devel/share/franka_description/cmake/franka_descriptionConfig-version.cmake
+/home/hrigroup2/mrtele_ws/devel/.private/franka_description/share/franka_description/cmake/franka_descriptionConfig.cmake /home/hrigroup2/mrtele_ws/devel/share/franka_description/cmake/franka_descriptionConfig.cmake
+/home/hrigroup2/mrtele_ws/devel/.private/franka_description/lib/pkgconfig/franka_description.pc /home/hrigroup2/mrtele_ws/devel/lib/pkgconfig/franka_description.pc

@@ -1,0 +1,1 @@
+/home/hrigroup2/mrtele_ws/devel/.private/custom_msg/lib/pkgconfig/custom_msg.pc

@@ -1,0 +1,1 @@
+/home/hrigroup2/mrtele_ws/devel/.private/niryo_moveit/share/common-lisp/ros/niryo_moveit/srv/_package.lisp

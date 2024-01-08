@@ -1,0 +1,8 @@
+prefix=/home/hrigroup2/mrtele_ws/devel/.private/franka_gripper
+
+Name: franka_gripper
+Description: Description of franka_gripper
+Version: 0.7.1
+Cflags: -I/home/hrigroup2/mrtele_ws/devel/.private/franka_gripper/include -I/home/hrigroup2/mrtele_ws/src/franka_ros/franka_gripper/include -I/usr/include
+Libs: -L${prefix}/lib -lfranka_gripper /usr/lib/libfranka.so.0.7.1
+Requires: roscpp message_runtime control_msgs actionlib sensor_msgs xmlrpcpp actionlib_msgs

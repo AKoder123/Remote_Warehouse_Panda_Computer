@@ -1,0 +1,1 @@
+/home/hrigroup2/mrtele_ws/devel/.private/niryo_moveit/lib/python2.7/dist-packages/niryo_moveit/__init__.py
