@@ -21,9 +21,6 @@ def callback(data):
 
   for i in range(7):
     joint_goal[i] = values[i]
-  
-  for i in range(2):
-    finger_joint_goal[i] = values[7+i]
 
   # The go command can be called with joint values, poses, or without any
   # parameters if you have already set the pose or joint target for the group
@@ -31,6 +28,9 @@ def callback(data):
 
   # Calling ``stop()`` ensures that there is no residual movement
   move_group.stop()
+
+  for i in range(2):
+    finger_joint_goal[i] = values[7+i]
 
   hand_move_group.go(finger_joint_goal, wait=True)
 

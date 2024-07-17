@@ -11,9 +11,9 @@ import PyKDL
 class TransformPointCloud():
     
     def __init__(self):
-        self.input_cloud_topic = "/camera/depth_registered/points"
-        self.source_frame_topic = "panda_link0"
-        self.transform_frame_topic = "camera_link"
+        self.input_cloud_topic = "compressed_point_cloud"
+        self.source_frame_topic = "camera_color_optical_frame"
+        self.target_frame_topic = "panda_link0"
         
         self.tf_buffer = tf2_ros.Buffer()
         self.tf_listener = tf2_ros.TransformListener(self.tf_buffer)
@@ -29,15 +29,15 @@ class TransformPointCloud():
             queue_size=1
             )
 
-
+           
     def pcd_callback(self, pcd):
         trans = self.tf_buffer.lookup_transform(
-            self.transform_frame_topic, 
+            self.target_frame_topic, #switched this and bottom line
             self.source_frame_topic, 
             rospy.Time()
             )
 
-
+        
         transformed_pcd = self.do_transform_cloud(pcd, trans)
 
         self.pcd_publisher.publish(transformed_pcd)
@@ -69,7 +69,6 @@ class TransformPointCloud():
     # CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
     # ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
     # POSSIBILITY OF SUCH DAMAGE.
-
     @staticmethod
     def transform_to_kdl(t):
         return PyKDL.Frame(PyKDL.Rotation.Quaternion(t.transform.rotation.x, t.transform.rotation.y,
@@ -91,7 +90,7 @@ class TransformPointCloud():
     # ---------------------------------------------------------------------- #
 
 if __name__ == '__main__':
-    rospy.init_node('transform_point_cloud')
+    rospy.init_node('transform_pcd')
     transform_point_cloud = TransformPointCloud()
     print("Publishing point cloud in base frame...")
     rospy.spin()

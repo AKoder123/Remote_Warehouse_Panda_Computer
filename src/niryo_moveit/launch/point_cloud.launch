@@ -1,0 +1,14 @@
+<launch>
+    <!-- <include file="$(find realsense2_camera)/launch/rs_rgbd.launch" /> -->
+
+    <node pkg="tf" type="static_transform_publisher" name="realsense_link_broadcaster"
+        args="0.040 -0.0175 0.066 3.1415 -1.571 0 /panda_hand /camera_link 100" />
+    
+
+    <!-- <node name="down_sample_pcd" pkg="niryo_moveit" type="down_sample_pcd.py">
+    </node>
+
+    <node name="transform_pcd" pkg="niryo_moveit" type="transform_pcd.py">
+    </node> -->
+
+</launch>

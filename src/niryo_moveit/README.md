@@ -2,15 +2,103 @@
 
 Ensure physics solver is set to `Temporal Gauss Seidel` in [Physics Manager](https://docs.unity3d.com/Manual/class-PhysicsManager.html)
 
+### External Camera VR Demo
+
+1) `roslaunch panda_moveit_config panda_control_moveit_rviz.launch robot_ip:=172.16.0.2`
+
+2) `roslaunch realsense2_camera rs_rgbd.launch`
+
+3) `roslaunch ros_tcp_endpoint endpoint.launch`
+
+3) Unity with robot Tuesday_attempt with Robot
+
+4) `rosrun niryo_moveit joint1_control.py` or `rosrun niryo_movit mirrored_joint1_control.py`
+
+5) `rosrun niryo_moveit transform_obj.py`
+
+6) `rosrun niryo_moveit camera_position_publisher.py`
+
+
+
+
+
+### Mixed reality demo
+
+1) `roslaunch panda_moveit_config panda_control_moveit_rviz.launch robot_ip:=172.16.0.2`
+
+2) `roslaunch ros_tcp_endpoint endpoint.launch`
+
+3) Unity with robot and MR project
+
+4) `rosrun niryo_moveit VR_no_camera_srv.py`
+
+
+
 
 ### ROS, Unity and Real Arm
 
+
+Camera:
+
+`roslaunch panda_moveit_config panda_control_moveit_rviz.launch robot_ip:=172.16.0.2`
+
+quickly do next option
+
+`roslaunch realsense2_camera rs_rgbd.launch`
+
+wait until rviz loads
+
+`rosrun niryo_moveit camera_position_publisher.py`
+
+`roslaunch ros_tcp_endpoint endpoint.launch`
+
+'rosrun niryo_moveit move_subscriber.py'
+
+wait for unity connection and then run move subscriber
+
+`rosrun niryo_moveit move_subscriber.py`
+
+`rosrun niryo_moveit joint1_control.py`
+
+
+Point cloud publishing:
+
+
+
+`roslaunch realsense2_camera rs_rgbd.launch`
+
+`roslaunch panda_moveit_config panda_control_moveit_rviz.launch robot_ip:=172.16.0.2`
+
+`rosrun niryo_moveit down_sample_pcd.py`
+
+`rosrun niryo_moveit transform_pcd.py`
+
+`roslaunch ros_tcp_endpoint endpoint.launch`
+
+`rosrun niryo_moveit joint1_control.py`
+
+if unable to move robot, stop rviz and launch again
+
+
+
+
+Previous Control methods
 
 `roslaunch panda_moveit_config panda_control_moveit_rviz.launch robot_ip:=172.16.0.2`
 
 `roslaunch ros_tcp_endpoint endpoint.launch`
 
 `rosrun niryo_moveit subscriber_mover.py`
+or
+`rosrun niryo_moveit new_subscriber_mover.py`
+
+To run tcp connection using ethernet:
+`roslaunch ros_tcp_endpoint endpoint.launch tcp_ip:=192.168.1.69 tcp_port:=10000`
+
+Run transformed point cloud (from cmaera_link to panda_link0):
+`rosrun niryo_moveit transform_point_cloud_publisher.py`
+
+In unity: show the 3D visualization for the topic **base_frame_point_cloud**
 
 
 If something goes wrong try:
@@ -24,6 +112,10 @@ To run camera:
 
 To test camera quickly:
 `realsense-viewer`
+
+publishing transformed point clouds:
+
+`rosrun tf static_transform_publisher -0.284 -0.018 0.494 0.999, 0.032, -0.032, 0.001 panda_K created_base 100`
 
 RVIZ errors:
 

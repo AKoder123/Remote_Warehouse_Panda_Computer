@@ -61,8 +61,8 @@ if __name__ == "__main__":
 
   print(joint_goal)
 
-  # values = [0,0]
   values = [0.04, 0.04]
+  # values = [0.04, 0.04]
 
   # ready_values = [0.00019025905158115864, -0.7850538262986299, 2.8837701730560838e-05, -2.356203691054924, -0.00016141187679397914, 1.5732667469142465, 0.7851245770537191]
 
@@ -82,3 +82,5 @@ if __name__ == "__main__":
 
   # # # Calling ``stop()`` ensures that there is no residual movement
   move_group.stop()
+
+ 

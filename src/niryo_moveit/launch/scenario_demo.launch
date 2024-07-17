@@ -1,0 +1,16 @@
+<launch>
+    <arg name="visualization" default="VR" />
+
+    <include file="$(find realsense2_camera)/launch/rs_rgbd.launch" />
+
+    <node name="transform_obj" pkg="niryo_moveit" type="transform_obj.py">
+        <param name="visualization_name" value="$(arg visualization)" />
+    </node>
+
+    <node name="mirrored_joint1_control" pkg="niryo_moveit" type="mirrored_joint1_control.py">
+    </node>
+
+    <node name="position_service_server" pkg="niryo_moveit" type="VR_no_camera_srv.py">
+    </node>
+
+</launch>
